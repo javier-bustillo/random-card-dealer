@@ -7,54 +7,23 @@ body {
 .card {
   display: inline-block;
   margin: auto;
-  padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
   height: 400px;
   width: 300px;
   position: relative;
 }
-/*
-.card .top-suit {
-  position: absolute;
-  top: 0px;
-  left: 20px;
-  font-size: 80px;
-}
-.card .bottom-suit {
-  position: absolute;
-  bottom: 0px;
-  right: 20px;
-  font-size: 80px;
-}
-*/
 .card .number {
   position: relative;
   top: 120px;
   font-size: 80px;
 }
-/*
-.card .top-suit::before {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 80px;
-}
-*/
 .card::before {
   position: absolute;
-  top: 10px;
+  /* top: 0px; */
   left: 10px;
   font-size: 80px;
 }
-/*
-.card .bottom-suit::after {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  font-size: 80px;
-}
-*/
 .card::after {
   position: absolute;
   bottom: 10px;
@@ -69,11 +38,13 @@ body {
 .club::after {
   content: "\2663";
 }
-.card .heart::before,
+.heart::before,
 .heart::after {
   content: "\2665";
+  color: red;
 }
-.card .diamond::before,
+.diamond::before,
 .diamond::after {
   content: "\2666";
+  color: red;
 }

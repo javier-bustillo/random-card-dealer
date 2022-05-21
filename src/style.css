@@ -17,6 +17,7 @@ body {
   position: relative;
   top: 120px;
   font-size: 80px;
+  font-family: "Rubik", sans-serif;
 }
 .card::before {
   position: absolute;
